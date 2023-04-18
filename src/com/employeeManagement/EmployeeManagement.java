@@ -79,4 +79,17 @@ public class EmployeeManagement {
 		
 	}
 	
+	 public void deleteEmployee() {
+	        System.out.print("Enter employee ID to delete: ");
+	        int id = sc.nextInt();
+	        sc.nextLine(); // Consume the newline character
+	        Employee employee = findEmployeeById(id);
+	        if (employee == null) {
+	            System.out.println("Employee with ID " + id + " not found.");
+	            return;
+	        }
+	        list.remove(employee);
+	        System.out.println("Employee deleted successfully!");
+	 }
+	
 }
