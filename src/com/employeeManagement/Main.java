@@ -27,9 +27,9 @@ public class Main {
                 case 3:
                     employeeManagement.updateEmployee();
                     break;
-//                case 4:
-//                    employeeManagement.deleteEmployee();
-//                    break;
+                case 4:
+                    employeeManagement.deleteEmployee();
+                    break;
                 case 0:
                     System.out.println("Exiting Employee Management System...");
                     break;
